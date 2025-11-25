@@ -1,0 +1,127 @@
+🔹 A. Basic Exploration (10 Questions)
+
+Load the dataset and print the first 10 rows.
+
+Show summary statistics for all numeric columns.
+
+Check the shape of the dataset (rows & columns).
+
+Find data types of all columns.
+
+Count how many shipments were sent from each Origin.
+
+Identify the unique shipping modes.
+
+Find the average delivery time.
+
+Check how many shipments were delivered late (Delay_hours > 0).
+
+Display the top 5 most expensive shipments.
+
+Find the total revenue from TotalCost_USD.
+
+🔹 B. Handling Missing Values (5 Questions)
+
+Count missing values in each column.
+
+Replace missing DeliveryTime_days with the column median.
+
+Remove rows where Distance_km is missing.
+
+Impute missing CustomerRating with mode.
+
+Fill missing FuelCost_USD using forward fill.
+
+🔹 C. Handling Duplicates (2 Questions)
+
+Check if there are duplicate ShipmentID records.
+
+Remove duplicate rows and count how many were deleted.
+
+🔹 D. Univariate Analysis (8 Questions)
+
+Plot histogram of Distance_km.
+
+Plot distribution of DeliveryTime_days.
+
+Find mean, median, mode of Weight_kg.
+
+Calculate variance & standard deviation of TotalCost_USD.
+
+Identify outliers in DeliveryTime_days using IQR.
+
+Identify outliers in Weight_kg using Z-score.
+
+Find the frequency count of ShippingMode.
+
+Plot boxplot of FuelCost_USD.
+
+🔹 E. Bivariate Analysis (8 Questions)
+
+Find correlation between Distance_km and DeliveryTime_days.
+
+Plot scatter plot of Weight_kg vs TotalCost_USD.
+
+Compare DeliveryTime_days for different ShippingMode (boxplot).
+
+Compute average DeliveryTime_days grouped by Origin.
+
+Analyze relationship between PackageValue_USD and CustomerRating.
+
+Check if WeatherDelay impacts DeliveryTime_days (group comparison).
+
+Plot bar chart of average FuelCost_USD by Destination.
+
+Compute covariance matrix for numeric variables.
+
+🔹 F. Multivariate Analysis (6 Questions)
+
+Perform pairplot for key variables.
+
+Build correlation heatmap for numeric columns.
+
+Find factors influencing Delay_hours using multivariate regression.
+
+Analyze delay patterns across (Origin, ShippingMode).
+
+Explore how WeatherDelay + TrafficDelay jointly affect delivery time.
+
+Create pivot table: Origin vs Destination vs Avg DeliveryTime_days.
+
+🔹 G. Hypothesis Testing (6 Questions)
+
+T-test: Do Air vs Ground shipments have different average delivery time?
+
+Chi-square test: Is WeatherDelay dependent on TrafficDelay?
+
+T-test: Are FuelCost_USD means equal for “Delayed” vs “Not delayed”?
+
+Z-test: Are DeliveryTime_days normally distributed?
+
+ANOVA: Compare DeliveryTime_days across 3+ ShippingModes.
+
+Chi-square test: Is LostOrDamaged related to ShippingMode?
+
+🔹 H. Feature Engineering (5 Questions)
+
+Create a new column: “Efficiency = EstimatedTime_days / DeliveryTime_days”.
+
+Encode ShippingMode using one-hot encoding.
+
+Convert WeatherDelay, TrafficDelay, LostOrDamaged to 0/1.
+
+Extract Month & Day from Date column.
+
+Bucket Distance_km into categories: Short / Medium / Long.
+
+🔹 I. Advanced (Bonus 5)
+
+Build a logistic regression model to predict Late Delivery (yes/no).
+
+Create a clustering model for shipment profiles.
+
+Detect extreme cost anomalies using Isolation Forest.
+
+Create a time-series trend of average delivery time by month.
+
+Build a decision tree to predict LostOrDamaged shipments.
